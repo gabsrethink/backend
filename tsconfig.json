@@ -1,8 +1,15 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "NodeNext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
     "skipLibCheck": true,
   },
+  "include": [
+    "api/**/*",
+    "src/**/*",
+    "types/**/*"  
+  ],
   "exclude": ["node_modules"]
 }

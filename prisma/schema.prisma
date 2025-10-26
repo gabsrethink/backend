@@ -1,0 +1,26 @@
+// File: prisma/schema.prisma
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id           String        @id @default(cuid())
+  email        String        @unique
+  name         String?
+  firebaseUid  String        @unique
+  favoriteList FavoriteList?
+}
+
+model FavoriteList {
+  id       String @id @default(cuid())
+  shareId  String @unique @default(cuid())
+  user     User   @relation(fields: [userId], references: [id])
+  userId   String @unique
+  movieIds Int[]
+}
