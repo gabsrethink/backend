@@ -8,7 +8,7 @@ const port = process.env.PORT || 3001;
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://frontend-taupe-95.vercel.app",
+  "https://frontend-taupe-one-95.vercel.app",
 ];
 
 const corsOptions: cors.CorsOptions = {
