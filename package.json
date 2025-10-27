@@ -1,8 +1,8 @@
 {
   "name": "express",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only api/index.ts",
-    "build": "npx prisma generate && tsc"
+    "postinstall": "prisma generate",
+    "dev": "ts-node-dev --respawn --transpile-only api/index.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.17.1",
