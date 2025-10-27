@@ -2,6 +2,8 @@
 
 Este é o back-end para a aplicação de Lista de Filmes, desenvolvido como parte de um desafio. A API gerencia a autenticação de usuários (via Firebase), a interação com a API do The Movie Database (TMDb) e o armazenamento/compartilhamento de listas de filmes favoritos.
 
+Link para o deploy: https://backend-delta-ebon-36.vercel.app
+
 ## Tecnologias Principais
 
 - Node.js: Ambiente de execução JavaScript no servidor.
@@ -66,7 +68,7 @@ Este é o back-end para a aplicação de Lista de Filmes, desenvolvido como part
 
 ## Configuração Local
 
-Clone o repositório: (Se aplicável)
+Clone o repositório:
 
 ```bash
 git clone <url-do-repositorio>
@@ -82,8 +84,6 @@ npm install
 Configure as Variáveis de Ambiente:
 
 - Crie um arquivo .env na raiz do projeto.
-
-- Copie o conteúdo do arquivo .env.example (se existir) ou adicione as seguintes variáveis:
 
 ```bash
 # URL de conexão do seu banco de dados PostgreSQL (local ou Neon/Supabase)
@@ -109,7 +109,7 @@ Inicie o Servidor de Desenvolvimento:
 npm run dev
 ```
 
-A API estará rodando em http://localhost:3001 (ou a porta definida).
+A API estará rodando em http://localhost:3001.
 
 ### Endpoints da API
 
